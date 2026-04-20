@@ -30,13 +30,15 @@ h2{font-size:1.3rem;margin:40px 0 16px;padding-bottom:8px;border-bottom:1px soli
 .project .meta{color:var(--muted);font-size:.85rem;margin-bottom:10px}
 .project .desc{font-size:.95rem;color:#c9d1d9}
 .tag{display:inline-block;background:#1f6feb22;color:var(--accent);padding:2px 8px;border-radius:12px;font-size:.75rem;margin-right:4px}
+.project.highlight{border-color:#f59e0b;border-width:2px;background:linear-gradient(180deg,#1a1508,var(--card) 40%)}
+.project.highlight h3::before{content:"🎯 現在注力中 ";color:#f59e0b;font-size:.85rem;font-weight:700;display:block;margin-bottom:6px;letter-spacing:.05em}
 footer{margin-top:64px;padding-top:24px;border-top:1px solid var(--border);color:var(--muted);font-size:.85rem;text-align:center}
 </style>
 </head>
 <body>
 
 <h1>kasukasudev</h1>
-<p class="tagline">AI駆動開発 / Claude Codeを自分専用AIアドバイザーに育てる個人運用エンジニア</p>
+<p class="tagline">データ分析(Kaggle) × AI駆動開発 / 仮説検証型の手を動かす社内SE</p>
 
 <div class="contact">
   <a href="https://github.com/kasukasudev" target="_blank" rel="noopener">GitHub</a>
@@ -47,13 +49,19 @@ footer{margin-top:64px;padding-top:24px;border-top:1px solid var(--border);color
 
 <section class="about">
 <h2>About</h2>
-<p>社内SEとして働きながら、AI駆動開発を中心とした個人ワークフローの自動化・高度化を進めています。</p>
-<p>思想は「毎回AIに前提を入れ直すのがめんどくさい → ならばナレッジを蓄積して自分専用のAIアドバイザーを育てる」。Claude Codeをハブに、メモリ・Hook・スキルで業務/生活/学習を一体運用しています。</p>
+<p>社内SEとして働きながら、Kaggleコンペでのデータ分析スキル強化とAI駆動開発による個人ワークフロー高度化の両輪で活動中。</p>
+<p>現在の主戦場は <strong>Kaggle</strong>。仮説検証型の特徴量設計・モデル選択・HPOのROI評価を通じて、実務で通用するデータ分析力を磨いている。併せて「毎回AIに前提を入れ直すのがめんどくさい → ナレッジを蓄積して自分専用のAIアドバイザーを育てる」思想で、Claude Codeをメモリ・Hook・スキルで武装した個人運用インフラを構築・継続運用中。</p>
 </section>
 
 <section>
 <h2>Current Projects</h2>
 <div class="projects">
+
+<div class="project highlight">
+<h3><a href="https://github.com/kasukasudev/kaggle-irrigation-need" target="_blank" rel="noopener">Kaggle PS S6E4 — Predicting Irrigation Need</a></h3>
+<div class="meta"><span class="tag">Kaggle</span><span class="tag">LightGBM</span><span class="tag">XGBoost</span><span class="tag">CatBoost</span><span class="tag">特徴量設計</span><span class="tag">Target Encoding</span></div>
+<div class="desc">Playground Series S6E4(灌漑必要度3クラス分類/Balanced Accuracy評価/締切4/26)にソロ参戦中。少数クラス(High=3.3%)の識別が勝負の鍵。EDA所見とモデル判定を切り分け、ablation/permutation testを前提にした仮説検証型の特徴量設計を実践。カテゴリ合成+Target Encoding、class_weight調整、3モデル比較(LGB/XGB/CatBoost)、Optuna HPOのROI評価を徹底。銅メダル獲得が目標。コンペ終了後にフルコード+振り返り記事を公開予定。</div>
+</div>
 
 <div class="project">
 <h3><a href="https://github.com/kasukasudev/cc-advisor-demo" target="_blank" rel="noopener">CC Advisor Demo(人生のアドバイザー化プロジェクト)</a></h3>
@@ -67,12 +75,6 @@ footer{margin-top:64px;padding-top:24px;border-top:1px solid var(--border);color
 <div class="desc">AI半導体関連のニュース・IR情報を自動収集+LLM要約して日次ブリーフィングを生成するパイプライン。RSS/NewsAPI/Finnhub複数ソース統合+Vercel Cron自動運用。情報整理の自動化を個人運用する実装例として公開。</div>
 </div>
 
-<div class="project">
-<h3><a href="https://github.com/kasukasudev/kaggle-irrigation-need" target="_blank" rel="noopener">Kaggle PS S6E4 参戦</a></h3>
-<div class="meta"><span class="tag">Kaggle</span><span class="tag">特徴量設計</span><span class="tag">LightGBM</span></div>
-<div class="desc">Playground Series S6E4(灌漑必要度3クラス分類)。EDA所見とモデル判定を切り分け、ablation/permutation testを前提とした仮説検証型の特徴量設計を実践中。コンペ終了後にフルコード公開予定。</div>
-</div>
-
 </div>
 </section>
 
@@ -80,12 +82,12 @@ footer{margin-top:64px;padding-top:24px;border-top:1px solid var(--border);color
 <h2>Focus Areas</h2>
 <div class="projects">
 <div class="project">
-<h3>AI駆動開発(メイン)</h3>
-<div class="desc">Claude Code を個人用AIアドバイザー化するプロジェクト。メモリ階層設計/Hook駆動の強制力仕組み化/スキル・エージェント自動選定/議事録・ロードマップ駆動の継続運用を日常レベルで実践。</div>
+<h3>データ分析(現在注力中)</h3>
+<div class="desc">Kaggleコンペを主戦場に、EDA所見と予測モデル判定の切り分け/分布比較・MI・ablation/カテゴリ合成+Target Encoding/モデル選択とHPOのROI評価を仮説検証型で実践。分析規律を徹底し、毎実験で数値根拠を記録。</div>
 </div>
 <div class="project">
-<h3>データ分析(Kaggle)</h3>
-<div class="desc">分布比較・MI・ablationを軸とした仮説検証型の分析をKaggleコンペで継続訓練中。</div>
+<h3>AI駆動開発</h3>
+<div class="desc">Claude Code を個人用AIアドバイザー化するプロジェクト。メモリ階層設計/Hook駆動の強制力仕組み化/スキル・エージェント自動選定/議事録・ロードマップ駆動の継続運用を日常レベルで実践。</div>
 </div>
 </div>
 </section>
