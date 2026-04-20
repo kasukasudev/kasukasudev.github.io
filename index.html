@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>kasukasudev — Portfolio</title>
+<meta name="description" content="Claude Codeを自分専用AIアドバイザーに育てる個人運用エンジニア kasukasudev のポートフォリオ">
+<style>
+:root{--bg:#0d1117;--fg:#e6edf3;--muted:#8b949e;--accent:#58a6ff;--card:#161b22;--border:#30363d}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans",sans-serif;line-height:1.7;padding:48px 24px;max-width:860px;margin:0 auto}
+h1{font-size:2.2rem;margin-bottom:8px;letter-spacing:-.02em}
+h2{font-size:1.3rem;margin:40px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--border);color:var(--accent)}
+.tagline{color:var(--muted);font-size:1.05rem;margin-bottom:24px}
+.contact{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:8px}
+.contact a{color:var(--accent);text-decoration:none;padding:6px 12px;border:1px solid var(--border);border-radius:6px;font-size:.9rem;transition:background .15s}
+.contact a:hover{background:var(--card)}
+.connect{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:16px}
+.connect .channel{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:20px;text-decoration:none;color:var(--fg);transition:border-color .15s,transform .15s}
+.connect .channel:hover{border-color:var(--accent);transform:translateY(-2px)}
+.connect .channel .label{font-size:1.05rem;font-weight:600;color:var(--accent);margin-bottom:6px}
+.connect .channel .why{font-size:.9rem;color:#c9d1d9;line-height:1.55}
+.about{margin:16px 0 8px}
+.about p{margin-bottom:12px}
+.projects{display:grid;gap:16px}
+.project{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:20px}
+.project h3{font-size:1.1rem;margin-bottom:6px}
+.project h3 a{color:var(--fg);text-decoration:none}
+.project h3 a:hover{color:var(--accent)}
+.project .meta{color:var(--muted);font-size:.85rem;margin-bottom:10px}
+.project .desc{font-size:.95rem;color:#c9d1d9}
+.tag{display:inline-block;background:#1f6feb22;color:var(--accent);padding:2px 8px;border-radius:12px;font-size:.75rem;margin-right:4px}
+footer{margin-top:64px;padding-top:24px;border-top:1px solid var(--border);color:var(--muted);font-size:.85rem;text-align:center}
+</style>
+</head>
+<body>
+
+<h1>kasukasudev</h1>
+<p class="tagline">AI駆動開発 / Claude Codeを自分専用AIアドバイザーに育てる個人運用エンジニア</p>
+
+<div class="contact">
+  <a href="https://github.com/kasukasudev" target="_blank" rel="noopener">GitHub</a>
+  <a href="https://note.com/kasukasudev" target="_blank" rel="noopener">note</a>
+  <a href="https://x.com/kasukasudev" target="_blank" rel="noopener">X</a>
+  <a href="mailto:kasukasuichi252+portfolio@gmail.com">Email</a>
+</div>
+
+<section class="about">
+<h2>About</h2>
+<p>社内SEとして働きながら、AI駆動開発を中心とした個人ワークフローの自動化・高度化を進めています。</p>
+<p>思想は「毎回AIに前提を入れ直すのがめんどくさい → ならばナレッジを蓄積して自分専用のAIアドバイザーを育てる」。Claude Codeをハブに、メモリ・Hook・スキルで業務/生活/学習を一体運用しています。</p>
+</section>
+
+<section>
+<h2>Current Projects</h2>
+<div class="projects">
+
+<div class="project">
+<h3><a href="https://github.com/kasukasudev/cc-advisor-demo" target="_blank" rel="noopener">CC Advisor Demo(人生のアドバイザー化プロジェクト)</a></h3>
+<div class="meta"><span class="tag">Claude Code</span><span class="tag">メモリ設計</span><span class="tag">Hook</span><span class="tag">アーキテクチャ</span></div>
+<div class="desc">Claude Codeを「自分専用AIアドバイザー」として育てる個人プロジェクトのアーキテクチャ紹介リポ。メモリ階層・Hook駆動の強制力・スキル自動選定・議事録駆動の継続運用の設計思想を公開。</div>
+</div>
+
+<div class="project">
+<h3><a href="https://github.com/kasukasudev/cc-patterns" target="_blank" rel="noopener">Claude Code Patterns</a></h3>
+<div class="meta"><span class="tag">Claude Code</span><span class="tag">デザインパターン</span><span class="tag">Agent</span></div>
+<div class="desc">個人CC運用で確立した設計パターン集。思考の質/記憶と学習/自律性/品質管理等、9カテゴリ19パターンを体系化して公開。</div>
+</div>
+
+<div class="project">
+<h3><a href="https://github.com/kasukasudev/ai-semi-news-aggregator" target="_blank" rel="noopener">AI Semiconductor News Aggregator</a></h3>
+<div class="meta"><span class="tag">Next.js 15.5</span><span class="tag">Supabase</span><span class="tag">Gemini</span></div>
+<div class="desc">AI半導体領域のニュース・IR情報を自動収集+LLM要約し、日刊ブリーフィングを生成するパイプライン。RSS/NewsAPI/Finnhub複数ソース統合+Vercel Cronによる自動運用を個人開発。</div>
+</div>
+
+<div class="project">
+<h3><a href="https://github.com/kasukasudev/kaggle-irrigation-need" target="_blank" rel="noopener">Kaggle PS S6E4 参戦</a></h3>
+<div class="meta"><span class="tag">Kaggle</span><span class="tag">特徴量設計</span><span class="tag">LightGBM</span></div>
+<div class="desc">Playground Series S6E4(灌漑必要度3クラス分類)。EDA所見とモデル判定を切り分け、ablation/permutation testを前提とした仮説検証型の特徴量設計を実践中。コンペ終了後にフルコード公開予定。</div>
+</div>
+
+<div class="project">
+<h3><a href="https://github.com/kasukasudev/mermaid-issues-sync" target="_blank" rel="noopener">mermaid-issues-sync</a></h3>
+<div class="meta"><span class="tag">Mermaid</span><span class="tag">GitHub API</span><span class="tag">双方向同期</span></div>
+<div class="desc">Mermaidフローチャート ↔ GitHub Issues の双方向同期ツール。Issue開閉でMermaid図のノード状態を自動更新し、タスク管理を可視化する個人プロダクト。</div>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Focus Areas</h2>
+<div class="projects">
+<div class="project">
+<h3>AI駆動開発(メイン)</h3>
+<div class="desc">Claude Code を個人用AIアドバイザー化するプロジェクト。メモリ階層設計/Hook駆動の強制力仕組み化/スキル・エージェント自動選定/議事録・ロードマップ駆動の継続運用を日常レベルで実践。</div>
+</div>
+<div class="project">
+<h3>データ分析(Kaggle)</h3>
+<div class="desc">分布比較・MI・ablationを軸とした仮説検証型の分析をKaggleコンペで継続訓練中。</div>
+</div>
+<div class="project">
+<h3>情報整理(AI半導体ニュース)</h3>
+<div class="desc">自動収集+LLM要約による日刊ニュースレポート生成。個人投資の前提情報整理を副産物として運用。</div>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Let's Connect</h2>
+<p style="color:var(--muted);margin-bottom:8px;font-size:.95rem">興味を持っていただけたら、以下のチャネルで日々の検証ログ・実装・学びを追えます。</p>
+<div class="connect">
+
+<a class="channel" href="https://github.com/kasukasudev" target="_blank" rel="noopener">
+<div class="label">GitHub →</div>
+<div class="why">Claude Codeアーキテクチャ/運用パターン/ニュースアグリゲーター/Kaggle/タスク可視化ツール、計5リポジトリを公開。個人開発の実物が見られます。</div>
+</a>
+
+<a class="channel" href="https://note.com/kasukasudev" target="_blank" rel="noopener">
+<div class="label">note →</div>
+<div class="why">AI駆動開発の思想・Kaggle取組みの振り返り・Claude Code運用知見を記事で発信予定。詳しく知りたい方向け。</div>
+</a>
+
+<a class="channel" href="https://x.com/kasukasudev" target="_blank" rel="noopener">
+<div class="label">X →</div>
+<div class="why">日々の検証・気づき・AI関連ニュースへの反応を短くポスト。リアルタイムの関心領域が見えます。</div>
+</a>
+
+<a class="channel" href="mailto:kasukasuichi252+portfolio@gmail.com">
+<div class="label">Email →</div>
+<div class="why">副業・コラボレーション・相談のご連絡はこちらへ。お気軽にどうぞ。</div>
+</a>
+
+</div>
+</section>
+
+<footer>
+<p>&copy; 2026 kasukasudev · Built with vanilla HTML/CSS · Hosted on GitHub Pages</p>
+</footer>
+
+</body>
+</html>
